@@ -12,13 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('pages.about');
 });
 
-Route::get('/link', function () {
-    return view('link');
+Route::get('/statute', function () {
+    return view('pages.statute');
 });
