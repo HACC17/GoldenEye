@@ -18,13 +18,23 @@
                                 {{$statute->title}}
 
                         </h2>
-
+                        <hr>
                         <h3>
                             {{$statute->subtitle}}
                         </h3>
 
+                        <hr>
+                        <div>
+                            @foreach($statute->sections as $section)
+                                <article>
+                                    <h3><strong>{{$section->section_title}}</strong></h3>
+                                    <hr>
+                                    <p>{{$section->body}}</p>
+                                    <hr>
+                                </article>
 
-
+                            @endforeach
+                        </div>
                     </div><!-- /.blog-post -->
 
                 @endforeach
