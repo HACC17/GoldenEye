@@ -2,51 +2,45 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1 class="display-4">Statutes</h1>
+        <h3 class="display-5">{{$statute->title}}</h3>
+        <p class="display-6">{{$statute->subtitle}}</p>
     </div>
 </div>
 @section ('content')
 
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                @foreach ($statutes as $statute)
 
-                    <div class="blog-post">
-                        <h2 class="blog-post-title">
+    <!-- Example row of columns -->
 
-                                {{$statute->title}}
+    <div class="blog-post">
+        <div>
+            <div>
+                <div id="accordion" role="tablist" aria-multiselectable="true">
+                    @foreach($statute->sections as $section)
+                        <div class="card">
+                            <div class="card-header" role="tab" id="heading{{$loop->index}}">
+                                <h5 class="mb-0">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                       href="#collapse{{$loop->index}}" aria-expanded="false"
+                                       aria-controls="collapse{{$loop->index}}">
+                                        {{$section->section_title}}
+                                    </a>
+                                </h5>
+                            </div>
 
-                        </h2>
-                        <hr>
-                        <h3>
-                            {{$statute->subtitle}}
-                        </h3>
-
-                        <hr>
-                        <div>
-                            <div>
-                                <ul class="list-group">
-                            @foreach($statute->sections as $section)
-                               <li class="ist-group-item">
-                                    <h4><strong>{{$section->section_title}}</strong></h4>
-                                    <hr>
-                                    <p>{{$section->body}}</p>
-                                    <hr>
-
-                               </li>
-                            @endforeach
-                                </ul>
+                            <div id="collapse{{$loop->index}}" class="collapse" role="tabpanel"
+                                 aria-labelledby="heading{{$loop->index}}">
+                                <div class="card-block">
+                                    {{$section->body}}
+                                </div>
                             </div>
                         </div>
-                    </div><!-- /.blog-post -->
-
-                @endforeach
+                    @endforeach
+                </div>
             </div>
-
         </div>
+    </div><!-- /.blog-post -->
 
-        <hr>
+    <hr>
 
 
 

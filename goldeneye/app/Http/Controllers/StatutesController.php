@@ -12,4 +12,9 @@ class StatutesController extends Controller
         $statutes = Statute::latest()->get();
         return view('pages.statute', compact('statutes'));
     }
+
+    public function show(Statute $statute) {
+        return view('pages.statute', compact('statute'));
+
+    }
 }

@@ -20,3 +20,4 @@ Route::get('/about', function () {
 });
 
 Route::get('/statute', 'StatutesController@index');
+Route::get('/statute/{statute}', 'StatutesController@show');
