@@ -25,15 +25,19 @@
 
                         <hr>
                         <div>
+                            <div>
+                                <ul class="list-group">
                             @foreach($statute->sections as $section)
-                                <article>
-                                    <h3><strong>{{$section->section_title}}</strong></h3>
+                               <li class="ist-group-item">
+                                    <h4><strong>{{$section->section_title}}</strong></h4>
                                     <hr>
                                     <p>{{$section->body}}</p>
                                     <hr>
-                                </article>
 
+                               </li>
                             @endforeach
+                                </ul>
+                            </div>
                         </div>
                     </div><!-- /.blog-post -->
 
