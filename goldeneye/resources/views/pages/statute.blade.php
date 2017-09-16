@@ -6,8 +6,49 @@
     </div>
 </div>
 @section ('content')
-    ------
-    Populates with Statues!
-    -------
+
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                @foreach ($statutes as $statute)
+
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">
+
+                                {{$statute->title}}
+
+                        </h2>
+                        <hr>
+                        <h3>
+                            {{$statute->subtitle}}
+                        </h3>
+
+                        <hr>
+                        <div>
+                            <div>
+                                <ul class="list-group">
+                            @foreach($statute->sections as $section)
+                               <li class="ist-group-item">
+                                    <h4><strong>{{$section->section_title}}</strong></h4>
+                                    <hr>
+                                    <p>{{$section->body}}</p>
+                                    <hr>
+
+                               </li>
+                            @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.blog-post -->
+
+                @endforeach
+            </div>
+
+        </div>
+
+        <hr>
+
+
+
 
 @endsection

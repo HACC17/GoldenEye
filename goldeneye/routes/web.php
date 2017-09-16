@@ -19,6 +19,4 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/statute', function () {
-    return view('pages.statute');
-});
+Route::get('/statute', 'StatutesController@index');
