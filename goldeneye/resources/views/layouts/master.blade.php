@@ -11,13 +11,13 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- add after bootstrap.min.css -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
 
     <!-- Custom styles for this template -->
     <link href="/css/jumbotron.css" rel="stylesheet">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    {{--<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=59bd87314e6a630011ca2235&product=custom-share-buttons"></script>--}}
 </head>
 
 <body>
@@ -28,7 +28,6 @@
 
 
 <div class="container">
-    Content here 8 ^ )
     @yield ('content')
 
     <hr>
