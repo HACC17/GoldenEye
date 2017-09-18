@@ -35,7 +35,7 @@
     @include ('layouts.footer')
 </div> <!-- /container -->
 
-
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59bfae9b4408819f"></script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -47,5 +47,4 @@
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
 </body>
 
-</body>
 </html>

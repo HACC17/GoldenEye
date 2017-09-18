@@ -19,16 +19,5 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-<<<<<<< HEAD
-Route::get('/bookmark', function () {
-    return view('bookmark');
-});
-
-Route::get('/link', function () {
-    return view('link');
-});
-
-=======
 Route::get('/statute', 'StatutesController@index');
 Route::get('/statute/{statute}', 'StatutesController@show');
->>>>>>> master
