@@ -35,6 +35,7 @@
     @include ('layouts.footer')
 </div> <!-- /container -->
 
+<script src="/js/app.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
