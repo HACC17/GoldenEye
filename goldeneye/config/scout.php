@@ -80,7 +80,7 @@ return [
     | Tntsearch Configuration
     |--------------------------------------------------------------------------
     |
-    | Here you may configure your tntsearch settings. 
+    | Here you may configure your tntsearch settings.
     |
     */
     'tntsearch' => [
