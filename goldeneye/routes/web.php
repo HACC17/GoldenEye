@@ -19,6 +19,11 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/bookmark', function () {
+    return view('bookmark');
+});
+
 Route::get('/link', function () {
     return view('link');
 });
+
