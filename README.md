@@ -18,9 +18,9 @@ Team GoldEye is aiming for several features that could benefit those who looking
 
 * ability to share the statutes through social media
 
-*
+* Have frequently asked legal question bar
 
-# How to Use
+# How will it look
 
 <img class="ui huge image" src="/doc/screenshots/picture1.png">
 
