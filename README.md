@@ -22,6 +22,8 @@ Team GoldEye is aiming for several features that could benefit those who looking
 
 # How will it look
 
+[](https://bteable.com/watch/presentation-2-154733)
+
 <img class="ui huge image" src="/doc/screenshots/picture1.png">
 
 <img class="ui huge image" src="/doc/screenshots/picture2.png">
